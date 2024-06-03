@@ -1,0 +1,100 @@
+@import 'base/base';
+@import 'base/mixins';
+@import 'base/variables';
+
+body {
+    background-color: $body-color;
+}
+
+.main {
+    &__container {
+        @include w_h_bc (100%, 300px, $container-color);
+        display: flex;
+        position: absolute;
+        top: 20%;
+    }
+    &__icons{
+        @include w_h_bc (120px, 100%, $icons-color);
+        border: 1px solid $border-color;
+        display: flex;
+        position: relative;
+        &:hover{
+            width: 450px;
+            .main__text{
+                display: flex;
+            }
+        }
+        &_twitter{
+            @include w_h_bc (120px, 100%, $icons-color);
+            background: url('https://api.iconify.design/mdi/twitter.svg?color=white&width=50&height=50') no-repeat center center;
+            position: relative;
+            &:hover{
+            cursor: pointer;
+            background-color: $twitter-color;
+            background-size: 70px 70px;
+            transition: background-color 0.7s ease;         
+            }
+        }
+        &_facebook{
+            @extend .main__icons_twitter;
+            background: url('https://api.iconify.design/uim/facebook.svg?color=white&width=50&height=50') no-repeat center center;
+            &:hover{
+                background-color: $facebook-color;
+            }
+        }
+        &_linkedin{
+            @extend .main__icons_twitter;
+            background: url('https://api.iconify.design/uim/linkedin.svg?color=white&width=50&height=50') no-repeat center center;
+            &:hover{
+                background-color: $linkedin-color;
+            }
+        }
+        &_instagram{
+            @extend .main__icons_twitter;
+            background: url('https://api.iconify.design/mdi/instagram.svg?color=white&width=50&height=50') no-repeat center center;
+            &:hover{
+                background-color: $instagram-color;
+            }
+        }
+        &_youtube{
+            @extend .main__icons_twitter;
+            background: url('https://api.iconify.design/akar-icons/youtube-fill.svg?color=white&width=50&height=50') no-repeat center center;
+            &:hover{
+                background-color: $youtube-color;
+            }
+        }
+        &_tumblr{
+            @extend .main__icons_twitter;
+            background: url('https://api.iconify.design/uil/tumblr.svg?color=white&width=50&height=50') no-repeat center center;
+            &:hover{
+                background-color: $tumblr-color;
+            }
+        }
+        &_dribbble{
+            @extend .main__icons_twitter;
+            background: url('https://api.iconify.design/ph/dribbble-logo.svg?color=white&width=50&height=50') no-repeat center center;
+            &:hover{
+                background-color: $dribbble-color;
+            }
+        }
+    }
+    &__text{
+        @include w_h_bc (330px, 100%, $text-backround);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10px;
+        display: none;
+        font: {
+            family: monospase;
+            size: 16px;
+            weight: 500;
+        }
+        &_title {
+            font: {
+                family: monospase;
+                size: 36px;
+            }
+        }
+    }
+}

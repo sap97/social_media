@@ -1,0 +1,146 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: coral;
+}
+
+.main__container {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(94, 94, 210);
+  display: flex;
+  position: absolute;
+  top: 20%;
+}
+.main__icons {
+  width: 120px;
+  height: 100%;
+  background-color: rgb(49, 49, 236);
+  border: 1px solid darkgray;
+  display: flex;
+  position: relative;
+}
+.main__icons:hover {
+  width: 450px;
+}
+.main__icons:hover .main__text {
+  display: flex;
+}
+.main__icons_twitter, .main__icons_dribbble, .main__icons_tumblr, .main__icons_youtube, .main__icons_instagram, .main__icons_linkedin, .main__icons_facebook {
+  width: 120px;
+  height: 100%;
+  background-color: rgb(49, 49, 236);
+  background: url("https://api.iconify.design/mdi/twitter.svg?color=white&width=50&height=50") no-repeat center center;
+  position: relative;
+}
+.main__icons_twitter:hover, .main__icons_dribbble:hover, .main__icons_tumblr:hover, .main__icons_youtube:hover, .main__icons_instagram:hover, .main__icons_linkedin:hover, .main__icons_facebook:hover {
+  cursor: pointer;
+  background-color: #00acee;
+  background-size: 70px 70px;
+  transition: background-color 0.7s ease;
+}
+.main__icons_facebook {
+  background: url("https://api.iconify.design/uim/facebook.svg?color=white&width=50&height=50") no-repeat center center;
+}
+.main__icons_facebook:hover {
+  background-color: #3b5998;
+}
+.main__icons_linkedin {
+  background: url("https://api.iconify.design/uim/linkedin.svg?color=white&width=50&height=50") no-repeat center center;
+}
+.main__icons_linkedin:hover {
+  background-color: #0e76a8;
+}
+.main__icons_instagram {
+  background: url("https://api.iconify.design/mdi/instagram.svg?color=white&width=50&height=50") no-repeat center center;
+}
+.main__icons_instagram:hover {
+  background-color: #5c9b3f;
+}
+.main__icons_youtube {
+  background: url("https://api.iconify.design/akar-icons/youtube-fill.svg?color=white&width=50&height=50") no-repeat center center;
+}
+.main__icons_youtube:hover {
+  background-color: #c4302b;
+}
+.main__icons_tumblr {
+  background: url("https://api.iconify.design/uil/tumblr.svg?color=white&width=50&height=50") no-repeat center center;
+}
+.main__icons_tumblr:hover {
+  background-color: #34526f;
+}
+.main__icons_dribbble {
+  background: url("https://api.iconify.design/ph/dribbble-logo.svg?color=white&width=50&height=50") no-repeat center center;
+}
+.main__icons_dribbble:hover {
+  background-color: #ea4c89;
+}
+.main__text {
+  width: 330px;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+  display: none;
+  font-family: monospase;
+  font-size: 16px;
+  font-weight: 500;
+}
+.main__text_title {
+  font-family: monospase;
+  font-size: 36px;
+}/*# sourceMappingURL=main.css.map */
